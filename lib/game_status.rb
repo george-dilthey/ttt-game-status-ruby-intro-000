@@ -19,6 +19,7 @@ def won(board)
   xpos = []
   opos = []
   board.each{|pos|
+    puts pos
     if position_taken(board,pos)
       pos == 'X' ? xpos << pos : opos << pos;
     end
