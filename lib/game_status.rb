@@ -21,6 +21,8 @@ def won?(board)
   WIN_COMBINATIONS.each{|comb|
     if comb.all?{|pos| position_taken?(board, pos)}
       return comb
+    else
+      return false
     end
   }
 end
