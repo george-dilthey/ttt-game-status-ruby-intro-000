@@ -18,7 +18,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
-  puts board
   xpos = []
   opos = []
   position_number = 0
@@ -29,12 +28,11 @@ def won(board)
     position_number += 1
   }
   WIN_COMBINATIONS.each{|comb|
-    puts comb
-    if comb.all?{|pos| xpos.include?(pos)} || comb.all?{|pos| opos.include?(pos)}
-      puts comb
+    if comb.all?{|pos| xpos.include?(pos)}
       return comb
+    elsif comb.all?{|pos| opos.include?(pos)}
+      return comb  
     else
-      puts'false'
       return false
     end
   }
