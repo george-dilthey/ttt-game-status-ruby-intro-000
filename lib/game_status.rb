@@ -28,7 +28,6 @@ def won(board)
     end
     position_number += 1
   end
-  puts xpos
   WIN_COMBINATIONS.each{|comb|
     if comb.all?{|pos| xpos.include?(pos) || opos.include?(pos)}
       puts comb
