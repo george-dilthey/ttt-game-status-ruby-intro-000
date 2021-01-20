@@ -22,6 +22,7 @@ def won?(board)
     puts comb
     if comb.all?{|pos| position_taken?(board, pos)}
       puts comb
+    end
   }
 end
 
