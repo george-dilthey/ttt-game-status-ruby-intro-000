@@ -27,7 +27,7 @@ def won(board)
     end
   }
   WIN_COMBINATIONS.each{|comb|
-    if comb.all?{|pos| xpos.include?(pos) || opos.include?(pos)}
+    if comb.all?{|pos| xpos.include?(pos)}
       return comb
     else
       return false
