@@ -23,7 +23,6 @@ def won(board)
   position_number = 0
   board.each{|pos|
     if position_taken?(board, pos.to_i)
-      puts pos
       pos == 'X' ? xpos << position_number : opos << position_number;
     end
     position_number += 1
@@ -39,4 +38,4 @@ def won(board)
   }
 end
 
-won(["X", "X", "X", "O", "O", " ", " ", " ", " "])
+won([" ", "X", "X", "O", "O", "O ", " ", " ", " "])
