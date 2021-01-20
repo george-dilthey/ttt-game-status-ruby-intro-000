@@ -29,4 +29,8 @@ def won?(board)
   }
 end
 
+def full?(board)
+  board.all?{|pos| position_taken?(board,pos)}
+end
+
 won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
