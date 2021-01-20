@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.any?{|comb|
-    comb.all?{|pos| position_taken?(board, pos)}
-    return comb
+    if comb.all?{|pos| position_taken?(board, pos)}
+      return comb
   }
 end
