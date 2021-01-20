@@ -1,6 +1,6 @@
 # Helper Method
 
-puts 'try'
+won(["X", "X", "X", "O", "O", " ", " ", " ", " "])
 
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
