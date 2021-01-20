@@ -30,7 +30,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.each_index.all?{|pos, i| position_taken?(board,i)}
+  board.each_index.all?{|i| position_taken?(board,i)}
 end
 
 won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
