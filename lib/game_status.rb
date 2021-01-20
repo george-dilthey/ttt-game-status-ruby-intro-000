@@ -45,4 +45,12 @@ def over?(board)
   end
 end
 
+def winner?(board)
+  if won?(board)[0] == "X"
+    return "X"
+  else
+    return "O"
+  end
+end
+
 won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
