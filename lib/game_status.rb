@@ -34,6 +34,7 @@ def won(board)
       puts comb
       return comb
     else
+      puts false
       return false
     end
   }
