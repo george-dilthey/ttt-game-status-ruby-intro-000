@@ -29,7 +29,7 @@ def won(board)
   }
   puts opos
   WIN_COMBINATIONS.each{|comb|
-    if comb.all?{|pos| opos.include?(pos)} || comb.all?{|pos| opos.include?(pos)}
+    if comb.all?{|pos| xpos.include?(pos)} || comb.all?{|pos| opos.include?(pos)}
       puts comb
       return comb
     else
@@ -39,4 +39,4 @@ def won(board)
   }
 end
 
-won([" ", "X", "X", "O", "O", "O", " ", " ", " "])
+won([" X", "X", "X", "O", "O", "O", " ", " ", " "])
