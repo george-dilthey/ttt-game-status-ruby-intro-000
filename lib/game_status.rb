@@ -20,7 +20,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.any?{|comb|
     if comb.all?{|pos| position_taken?(board, pos)}
-      return comb
+      arr = comb.each{|pos| board[pos]}
+      if arr.uniq.size <=1
+        return comb
+      end
     end
   }
 end
