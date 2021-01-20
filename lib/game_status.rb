@@ -33,4 +33,12 @@ def full?(board)
   board.each_index.all?{|i| position_taken?(board,i)}
 end
 
+def draw?(board)
+  if full?(board)
+    if !won?(board)
+      return true
+    end
+  end
+end
+
 won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
