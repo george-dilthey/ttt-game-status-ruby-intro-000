@@ -20,9 +20,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each{|comb|
     if comb.all?{|pos| position_taken?(board, pos)}
-      puts comb
+      return comb
     end
   }
 end
-
-won?([" ", "O", "O", "O", "O", "O", " ", " ", " "])
