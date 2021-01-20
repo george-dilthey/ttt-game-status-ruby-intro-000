@@ -21,6 +21,7 @@ def won?(board)
   WIN_COMBINATIONS.any?{|comb|
     if comb.all?{|pos| position_taken?(board, pos)}
       arr = comb.each{|pos| board[pos]}
+      puts arr
       if arr.uniq.size <=1
         return comb
       end
