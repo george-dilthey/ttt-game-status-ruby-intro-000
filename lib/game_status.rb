@@ -24,7 +24,7 @@ def won(board)
     position_number = 0
     if position_taken?(board, pos.to_i)
       pos == 'X' ? xpos << position_number : opos << position_number;
-    
+
     end
     position_number += 1
   }
