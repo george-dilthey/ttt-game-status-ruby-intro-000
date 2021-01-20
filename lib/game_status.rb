@@ -31,7 +31,8 @@ def won(board)
     if comb.all?{|pos| xpos.include?(pos)}
       return comb
     elsif comb.all?{|pos| opos.include?(pos)}
-      return comb  
+      puts comb
+      return comb
     else
       return false
     end
