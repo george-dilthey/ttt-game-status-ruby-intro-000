@@ -22,12 +22,12 @@ def won(board)
   opos = []
   board.each{|pos|
     puts pos
-    if position_taken?(board,pos.to_i)
+    if position_taken?(board, pos.to_i)
       pos == 'X' ? xpos << pos : opos << pos;
     end
   }
   WIN_COMBINATIONS.each{|comb|
-    if comb.all?{|pos| xpos.include? || opos.include?}
+    if comb.all?{|pos| xpos.include?(pos) || opos.include?(pos)}
       return comb
     else
       return false
