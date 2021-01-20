@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won(board)
+def won?(board)
   xpos = []
   opos = []
   position_number = 0
@@ -42,4 +42,4 @@ def won(board)
   }
 end
 
-won([" ", "X", "X", "O", "O", "O", " ", " ", " "])
+won?([" ", "X", "X", "O", "O", "O", " ", " ", " "])
