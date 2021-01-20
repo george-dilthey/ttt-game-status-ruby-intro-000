@@ -21,8 +21,8 @@ def won(board)
   xpos = []
   opos = []
   position_number = 0
-  board.each{|pos,i|
-    puts i
+  board.each{|pos,index|
+    puts index
     if position_taken?(board, pos.to_i)
       pos == 'X' ? xpos << position_number : opos << position_number;
     end
