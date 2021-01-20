@@ -27,3 +27,5 @@ def won?(board)
     end
   }
 end
+
+won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
