@@ -1,6 +1,5 @@
 # Helper Method
 
-won(["X", "X", "X", "O", "O", " ", " ", " ", " "])
 
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -35,3 +34,5 @@ def won(board)
     end
   }
 end
+
+won(["X", "X", "X", "O", "O", " ", " ", " ", " "])
