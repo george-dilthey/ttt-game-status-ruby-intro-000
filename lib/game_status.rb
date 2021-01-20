@@ -21,9 +21,12 @@ def won(board)
   xpos = []
   opos = []
   board.each{|pos|
+    position_number = 0
     if position_taken?(board, pos.to_i)
-      pos == 'X' ? xpos << pos : opos << pos;
+      pos == 'X' ? xpos << position_number : opos << position_number;
+    
     end
+    position_number += 1
   }
   WIN_COMBINATIONS.each{|comb|
     if comb.all?{|pos| xpos.include?(pos) || opos.include?(pos)}
