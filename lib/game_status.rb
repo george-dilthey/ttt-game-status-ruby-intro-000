@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
+  puts board
   xpos = []
   opos = []
   position_number = 0
