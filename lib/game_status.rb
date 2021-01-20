@@ -19,8 +19,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each{|comb|
-    if comb.all?{|pos| position_taken?(board, pos)}
-      return comb
-    end
+    comb.all?{|pos| position_taken?(board, pos)}
   }
 end
