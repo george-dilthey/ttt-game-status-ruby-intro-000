@@ -22,5 +22,6 @@ def won?(board)
     if comb.all?{|pos| position_taken?(board, pos)}
       return comb
     end
+  return false  
   }
 end
